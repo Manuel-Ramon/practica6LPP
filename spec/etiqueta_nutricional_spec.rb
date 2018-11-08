@@ -5,7 +5,11 @@ require 'lib/etiqueta_nutricional'
 
 #2
 
-#Llamada al constructor (instanciación de clase)
-context  Etiqueta do
-	label = Etiqueta.new("Galletas",23,11,66,37,10,1)
+#La siguiente línea es para indicar un bloque de pruebas TDD que se llama "Etiqueta"
+context  EtiquetaNutricional do
+
+	#Esto dice que antes de hacer cada una de las pruebas (:each do) debe crearse una instanciación de la clase con estas características
+	before :each do
+		@label = EtiquetaNutricional.new("Galletas",23,11,66,37,10,1)
+	end
 end
