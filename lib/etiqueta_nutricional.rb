@@ -30,5 +30,10 @@ require "etiqueta_nutricional/version"
 			@grasas
 		end
 
+		#Devuelve el contenido de grasas saturadas producto
+		def sat_fat
+			@saturadas
+		end
+
 	end
 #end

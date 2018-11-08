@@ -29,8 +29,9 @@ context  Etiqueta do
 			expect(@label.fat).to eq(23)
 		end
 
+		#Prueba spec sobre metodo obtiene grasas saturadas
 		it "Grasas Saturadas" do
-			expect(@label.sat_fat).to(11)
+			expect(@label.sat_fat).to eq(11)
 		end
 	end
 end
