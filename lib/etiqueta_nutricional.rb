@@ -18,10 +18,12 @@ require "etiqueta_nutricional/version"
 			@proteinas = prot
 			@sal = s 
 		end
-
+		
+		#Devuelve el contenido del atributo nombre
 		def noun
 			#puts "#{@nombre}"
 			@nombre
 		end
+
 	end
 #end

@@ -12,14 +12,18 @@ context  Etiqueta do
 
 	#Esto dice que antes de hacer cada una de las pruebas (:each do) debe crearse una instanciación de la clase con estas características
 	before :each do
-		@labe = Etiqueta.new("Galletas",23,11,66,37,10,1)
+		@label = Etiqueta.new("Galletas",23,11,66,37,10,1)
 	end
 
 	#Prueba1
 	#Si al llamar al método que devuelve el nombre de la etiqueta funciona
 	context "Si los setters funcionan" do
 		it "La etiqueta/nombre" do
-			expect(@labe.noun).to eq("Galletas")
+			expect(@label.noun).to eq("Galletas")
+		end
+
+		it "Grasas" do
+			expect(@label.fat).to eq(23)
 		end
 	end
 end
