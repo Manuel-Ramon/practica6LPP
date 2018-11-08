@@ -38,5 +38,10 @@ require "etiqueta_nutricional/version"
 		def hidrates
 			@hidratos
 		end
+
+		#Dev azucares
+		def sugars
+			@azucares
+		end
 	end
 #end
