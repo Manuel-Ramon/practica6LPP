@@ -38,5 +38,10 @@ context  Etiqueta do
 		it "Hidratos de carbono" do
 			expect(@label.hidrates).to eq(66)
 		end
+
+		#spec azucares
+		it "Azucares" do
+			expect(@label.sugars).to eq(37)
+		end
 	end
 end
