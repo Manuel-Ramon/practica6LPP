@@ -1,0 +1,15 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+#Ficheros temporales de la ruta de .gitignore y las subcarpetas
+
+*~
+/lib/*~
+/spec/*~
+/bin/*~
