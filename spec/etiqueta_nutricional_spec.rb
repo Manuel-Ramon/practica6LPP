@@ -48,5 +48,10 @@ context  Etiqueta do
 		it "Proteinas" do 
 			expect(@label.proteins).to eq(10)
 		end
+
+		#spec sal
+		it "Sal" do
+			expect(@label.salt).to eq(2)
+		end
 	end
 end

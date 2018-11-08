@@ -48,5 +48,6 @@ require "etiqueta_nutricional/version"
 		def proteins
 			@proteinas
 		end
+
 	end
 #end
