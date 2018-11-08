@@ -60,5 +60,10 @@ context  Etiqueta do
 		it "Valor energetico kilojulios" do
 			expect(@label.kj).to eq(500)
 		end
+
+		#Prueba spec Valor energetico kcal
+		it "Valor energetico kilocalorias" do
+			expect(@label.kcal).to eq(1200)
+		end
 	end
 end
