@@ -43,5 +43,10 @@ require "etiqueta_nutricional/version"
 		def sugars
 			@azucares
 		end
+
+		#Dev proteinas
+		def proteins
+			@proteinas
+		end
 	end
 #end
