@@ -33,5 +33,10 @@ context  Etiqueta do
 		it "Grasas Saturadas" do
 			expect(@label.sat_fat).to eq(11)
 		end
+
+		#Prueba spec sobre método obtiene hidratos carbono
+		it "Hidratos de carbono" do
+			expect(@label.hidrates).to eq(66)
+		end
 	end
 end
