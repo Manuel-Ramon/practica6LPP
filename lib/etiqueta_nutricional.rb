@@ -25,5 +25,10 @@ require "etiqueta_nutricional/version"
 			@nombre
 		end
 
+		#Devuelve el contenido en grasas del producto
+		def fat
+			@grasas
+		end
+
 	end
 #end
