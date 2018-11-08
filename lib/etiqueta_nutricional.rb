@@ -56,7 +56,12 @@ require "etiqueta_nutricional/version"
 
 		#Calc kilojulios
 		def kj
-			@kilojulios = (@hidratos * 17) + (@proteinas * 17) + ((@grasas + @saturadas) * 37) + (@sal * 25)
+			@kilojulios = (@hidratos * 17) + (@proteinas * 17) + (@grasas * 37) + (@sal * 25)
+		end
+
+		#Cal kilocalorias
+		def kcal
+			@kilocalorias = (@hidratos * 4) + (@proteinas * 4) + (@grasas * 9) + (@sal * 6)
 		end
 	end
 #end
