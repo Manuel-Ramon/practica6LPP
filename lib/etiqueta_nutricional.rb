@@ -49,5 +49,9 @@ require "etiqueta_nutricional/version"
 			@proteinas
 		end
 
+		#Devolver sal
+		def salt
+			@sal
+		end
 	end
 #end

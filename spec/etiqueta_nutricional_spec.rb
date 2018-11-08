@@ -51,7 +51,7 @@ context  Etiqueta do
 
 		#spec sal
 		it "Sal" do
-			expect(@label.salt).to eq(2)
+			expect(@label.salt).to eq(1)
 		end
 	end
 end
