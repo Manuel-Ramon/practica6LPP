@@ -17,7 +17,7 @@ context  Etiqueta do
 
 	#Multipruebas1
 	#Si al llamar al método que devuelve el nombre de la etiqueta funciona
-	context "Si los setters funcionan" do
+	context "Si los getters funcionan" do
 
 		#Prueba spec sobre método obtiene etiqueta producto
 		it "La etiqueta/nombre" do
@@ -52,6 +52,13 @@ context  Etiqueta do
 		#spec sal
 		it "Sal" do
 			expect(@label.salt).to eq(1)
+		end
+	end
+
+	context "Si los valores energeticos formateados funcionan" do
+		#Prueba spec Valor energetico kJ
+		it "Valor energetico kilojulios" do
+			expect(@label.kj).to eq("500kJ")
 		end
 	end
 end
