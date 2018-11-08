@@ -4,8 +4,7 @@ require "etiqueta_nutricional/version"
   #class Error < StandardError; end
   # Your code goes here...
 
-	#Nuestra clase
-	#class MierdaGorda 
+	#Nuestra clase 
 	class Etiqueta
 		attr_reader
 		#Constructor
@@ -35,5 +34,9 @@ require "etiqueta_nutricional/version"
 			@saturadas
 		end
 
+		#Dev hidratos
+		def hidrates
+			@hidratos
+		end
 	end
 #end
