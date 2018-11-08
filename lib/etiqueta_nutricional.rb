@@ -1,13 +1,15 @@
 require "etiqueta_nutricional/version"
 
-module EtiquetaNutricional
-  class Error < StandardError; end
+#module EtiquetaNutricional
+  #class Error < StandardError; end
   # Your code goes here...
 
-	#Nuestra clase 
-	class EtiquetaNutricional
+	#Nuestra clase
+	#class MierdaGorda 
+	class Etiqueta
+		attr_reader
 		#Constructor
-		def initialize(nom,gras,sat,hid,azu,prot,s)
+		def initialize (nom,gras,sat,hid,azu,prot,s)
 			@nombre = nom
 			@grasas = gras
 			@saturadas = sat
@@ -16,5 +18,10 @@ module EtiquetaNutricional
 			@proteinas = prot
 			@sal = s 
 		end
+
+		def noun
+			#puts "#{@nombre}"
+			@nombre
+		end
 	end
-end
+#end
