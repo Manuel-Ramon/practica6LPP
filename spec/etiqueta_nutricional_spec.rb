@@ -12,4 +12,12 @@ context  EtiquetaNutricional do
 	before :each do
 		@label = EtiquetaNutricional.new("Galletas",23,11,66,37,10,1)
 	end
+
+	#Prueba1
+	#Si al llamar al método que devuelve el nombre de la etiqueta funciona
+	describe "Si los setters funcionan" do
+		it "La etiqueta/nombre" do
+			expect(@label.nombre).to eq("Galletas")
+		end
+	end
 end
