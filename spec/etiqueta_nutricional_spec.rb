@@ -15,15 +15,22 @@ context  Etiqueta do
 		@label = Etiqueta.new("Galletas",23,11,66,37,10,1)
 	end
 
-	#Prueba1
+	#Multipruebas1
 	#Si al llamar al método que devuelve el nombre de la etiqueta funciona
 	context "Si los setters funcionan" do
+
+		#Prueba spec sobre método obtiene etiqueta producto
 		it "La etiqueta/nombre" do
 			expect(@label.noun).to eq("Galletas")
 		end
 
+		#Prueba spec sobre metodo obtiene grasas producto
 		it "Grasas" do
 			expect(@label.fat).to eq(23)
+		end
+
+		it "Grasas Saturadas" do
+			expect(@label.sat_fat).to(11)
 		end
 	end
 end
