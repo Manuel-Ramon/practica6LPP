@@ -43,5 +43,10 @@ context  Etiqueta do
 		it "Azucares" do
 			expect(@label.sugars).to eq(37)
 		end
+
+		#spec proteinas
+		it "Proteinas" do 
+			expect(@label.proteins).to eq(10)
+		end
 	end
 end
