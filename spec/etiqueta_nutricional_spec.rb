@@ -58,7 +58,7 @@ context  Etiqueta do
 	context "Si los valores energeticos formateados funcionan" do
 		#Prueba spec Valor energetico kJ
 		it "Valor energetico kilojulios" do
-			expect(@label.kj).to eq("500kJ")
+			expect(@label.kj).to eq(500)
 		end
 	end
 end

@@ -53,5 +53,10 @@ require "etiqueta_nutricional/version"
 		def salt
 			@sal
 		end
+
+		#Calc kilojulios
+		def kj
+			@kilojulios = (@hidratos * 17) + (@proteinas * 17) + ((@grasas + @saturadas) * 37) + (@sal * 25)
+		end
 	end
 #end
