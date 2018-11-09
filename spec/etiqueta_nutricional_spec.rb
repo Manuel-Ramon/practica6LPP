@@ -55,15 +55,64 @@ context  Etiqueta do
 		end
 	end
 
-	context "Si los valores energeticos formateados funcionan" do
+	context "Si los valores energeticos funcionan" do
 		#Prueba spec Valor energetico kJ
 		it "Valor energetico kilojulios" do
-			expect(@label.kj).to eq(500)
+			expect(@label.kj).to eq(2168)
 		end
 
 		#Prueba spec Valor energetico kcal
 		it "Valor energetico kilocalorias" do
-			expect(@label.kcal).to eq(1200)
+			expect(@label.kcal).to eq(517)
 		end
 	end
-end
+
+	context "Datos IR" do
+		#spec IR grasas
+		it "Cuanto % de grasa contiene" do
+			expect(@label.irgrasa).to eq(12)
+		end
+
+		#spec IR saturadas
+		it "Cuanto % de saturadas" do
+			expect(@label.irsaturada).to eq(5)
+		end
+
+		#spec IR hidratos
+		it "Cuanto % de hidratos" do
+			expect(@label.irhidrato).to eq(20)
+		end
+
+		#spec IR azucares
+		it "Cuanto % de azucares" do
+			expect(@label.irazucar).to eq(15)
+		end
+
+		#spec IR proteinas
+		it "Cuanto % de proteinas" do
+			expect(@label.irproteina).to eq(6)
+		end
+
+		#spec IR sal
+		it "Cuanto % de sal" do
+			expect(@label.irsal).to eq(1)
+		end
+	end
+
+	#context "¿Salida formateada?" do
+		#Prueba spec etiqueta formateada
+		#it "Etiqueta1" do
+			#expect(@label.mostrar1).to eq("Informacion Nutricional")
+		#end
+
+		#spec nombre formateado
+		#it "Etiqueta2" do
+			#expect(@label.mostrar2).to eq("Producto: Galletas")
+		#end
+
+		#
+		#it "Etiqueta3" do
+			#expect(@label.mostrar3).to eq("Valor energetico: |512kJ/527kcal|")
+		#end
+	#end
+end 

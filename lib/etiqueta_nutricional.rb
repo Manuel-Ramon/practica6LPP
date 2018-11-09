@@ -16,6 +16,7 @@ require "etiqueta_nutricional/version"
 			@azucares = azu
 			@proteinas = prot
 			@sal = s 
+			@porciones = 0
 		end
 		
 		#Devuelve el contenido del atributo nombre
@@ -63,5 +64,9 @@ require "etiqueta_nutricional/version"
 		def kcal
 			@kilocalorias = (@hidratos * 4) + (@proteinas * 4) + (@grasas * 9) + (@sal * 6)
 		end
+
+		#def porciones (porciones)
+			#@porciones = porciones
+		#end
 	end
 #end
