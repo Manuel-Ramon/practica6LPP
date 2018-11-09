@@ -99,6 +99,12 @@ context  Etiqueta do
 		end
 	end
 
+	context "Porciones" do
+		it "Porcion" do
+			expect(@label.cambiar_porciones(3)).to eq(3)
+		end
+	end
+
 	#context "¿Salida formateada?" do
 		#Prueba spec etiqueta formateada
 		#it "Etiqueta1" do

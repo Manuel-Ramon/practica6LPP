@@ -95,7 +95,7 @@ require "etiqueta_nutricional/version"
 			@irsal = (@sal * 100) / 6
 		end
 
-		#def porciones (porciones)
+		#def cambiar_porciones (porciones)
 			#@porciones = porciones
 		#end
 	end
