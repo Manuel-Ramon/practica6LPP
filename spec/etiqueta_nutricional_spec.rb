@@ -70,32 +70,32 @@ context  Etiqueta do
 	context "Datos IR" do
 		#spec IR grasas
 		it "Cuanto % de grasa contiene" do
-			expect(@label.irgrasa).to eq(12)
+			expect(@label.irgrasa).to eq(32)
 		end
 
 		#spec IR saturadas
 		it "Cuanto % de saturadas" do
-			expect(@label.irsaturada).to eq(5)
+			expect(@label.irsaturada).to eq(55)
 		end
 
 		#spec IR hidratos
 		it "Cuanto % de hidratos" do
-			expect(@label.irhidrato).to eq(20)
+			expect(@label.irhidrato).to eq(25)
 		end
 
 		#spec IR azucares
 		it "Cuanto % de azucares" do
-			expect(@label.irazucar).to eq(15)
+			expect(@label.irazucar).to eq(41)
 		end
 
 		#spec IR proteinas
 		it "Cuanto % de proteinas" do
-			expect(@label.irproteina).to eq(6)
+			expect(@label.irproteina).to eq(20)
 		end
 
 		#spec IR sal
 		it "Cuanto % de sal" do
-			expect(@label.irsal).to eq(1)
+			expect(@label.irsal).to eq(16)
 		end
 	end
 

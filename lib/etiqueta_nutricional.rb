@@ -65,6 +65,36 @@ require "etiqueta_nutricional/version"
 			@kilocalorias = (@hidratos * 4) + (@proteinas * 4) + (@grasas * 9) + (@sal * 6)
 		end
 
+		#IR grasa
+		def irgrasa
+			@irfat = (@grasas * 100) / 70
+		end
+
+		#IR saturadas
+		def irsaturada
+			@irfat = (@saturadas * 100) / 20
+		end
+
+		#IR hidratos
+		def irhidrato
+			@irhidrato = (@hidratos * 100) / 260
+		end
+
+		#IR azucares
+		def irazucar
+			@irazucar = (@azucares * 100) / 90
+		end
+
+		#IR proteinas
+		def irproteina
+			@irproteina = (@proteinas * 100) / 50
+		end
+
+		#IR sal
+		def irsal
+			@irsal = (@sal * 100) / 6
+		end
+
 		#def porciones (porciones)
 			#@porciones = porciones
 		#end
